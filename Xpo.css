@@ -1,0 +1,285 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: linear-gradient(45deg, #5b58eb, #bb63ff, #56e1e9);
+    background-size: 400% 400%;
+    /* Tambahin ini biar gradasinya bisa digeser-geser */
+    background-position: 0% 50%;
+    background-attachment: fixed;
+    animation: MoveB 10s ease-in-out infinite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes MoveB {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    75% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.group-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header {
+    background-color: #0a23535d;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logoxpo {
+    margin-right: 15px;
+
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+
+}
+
+.cont-nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+}
+
+.cont-point1 {
+    display: flex;
+    flex-direction: column;
+}
+.nume a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+.nume a:hover{
+    color: rgb(8, 230, 0);
+}
+.menu a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+.menu a:hover{
+    color: #ff00ea;
+}
+
+.question1 {
+    font-size: 4rem;
+    margin-left: 1rem;
+    font-family: sans-serif;
+    display: flexbox;
+
+}
+
+.point1 {
+    background-color: rgba(0, 0, 0, 0.137);
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.point1 h2 {
+    margin-left: 1rem;
+    font-family: sans-serif;
+}
+
+.point2-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.point2 {
+    background-color: rgba(0, 0, 0, 0.137);
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1.7rem;
+    width: 40%;
+    transition: all 0.2s ease-in-out;
+    border: solid 2px rgba(0, 0, 0, 0);
+}
+.point2:hover{
+    border: solid 2px rgba(0, 0, 0, 0.37);
+    margin-top: 5px;
+}
+
+.point2-gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.jaringan {
+    background-color: rgba(0, 0, 0, 0.137);
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1.7rem;
+    width: 40%;
+    transition: all 0.2s ease-in-out;
+    border: solid 2px rgba(0, 0, 0, 0);
+}
+.jaringan:hover{
+    border: solid 2px rgba(0, 0, 0, 0.37);
+    margin-top: 5px;
+}
+
+.jaringan-gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.point3 {
+    background-color: rgba(0, 0, 0, 0.137);
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1.7rem;
+    width: 40%;
+    transition: all 0.2s ease-in-out;
+    border: solid 2px rgba(0, 0, 0, 0);
+}
+.point3:hover{
+    border: solid 2px rgba(0, 0, 0, 0.37);
+    margin-top: 5px;
+}
+
+.point3-gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.iot {
+    background-color: rgba(0, 0, 0, 0.137);
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1.7rem;
+    width: 40%;
+    transition: all 0.2s ease-in-out;
+    border: solid 2px rgba(0, 0, 0, 0);
+}
+.iot:hover{
+    border: solid 2px rgba(0, 0, 0, 0.37);
+    margin-top: 5px;
+}
+
+.iot-gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media (max-width : 565px) {
+    .question1 {
+        font-size: 2.7rem;
+    }
+        .point1 h2 {
+        font-size: 1rem;
+    }
+    .point2{
+        width: 50%;
+    }
+    .jaringan{
+        width: 50%;
+    }
+    .point3{
+        width: 50%;
+    }
+    .iot{
+        width: 50%;
+    }
+}
+
+@media (max-width : 422px) {
+    .cont-nav {
+        display: flex;
+        flex-direction: column;
+    }
+        .point1 h2 {
+        font-size: 1rem;
+    }
+    .question1{
+        font-size: 2.3rem;
+    }
+    .point2{
+        width: 50%;
+    }
+    .jaringan{
+        width: 50%;
+    }
+    .point3{
+        width: 50%;
+    }
+    .iot{
+        width: 50%;
+    }
+
+}
+
+@media (max-width : 375px) {
+    .question1 {
+        font-size: 2rem;
+    }
+    .point1 h2 {
+        font-size: 1rem;
+    }
+    .point2{
+        width: 50%;
+    }
+    .jaringan{
+        width: 50%;
+    }
+    .point3{
+        width: 50%;
+    }
+    .iot{
+        width: 50%;
+    }
+}
